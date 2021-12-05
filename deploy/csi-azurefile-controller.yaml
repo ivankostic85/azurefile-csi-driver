@@ -14,7 +14,7 @@ spec:
       labels:
         app: csi-azurefile-controller
     spec:
-      hostNetwork: true  # only required for MSI enabled cluster
+#       hostNetwork: true  # only required for MSI enabled cluster
       serviceAccountName: csi-azurefile-controller-sa
       nodeSelector:
         kubernetes.io/os: linux  # add "kubernetes.io/role: master" to run controller on master node
